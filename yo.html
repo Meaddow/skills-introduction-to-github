@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .btn-custom {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Razones por las que me gustas</h1>
+        <button class="btn btn-primary btn-custom" onclick="showReason('Eres increíblemente amable')">Razón 1</button>
+        <button class="btn btn-success btn-custom" onclick="showReason('Tienes una sonrisa hermosa')">Razón 2</button>
+        <button class="btn btn-warning btn-custom" onclick="showReason('Me haces reír')">Razón 3</button>
+        <button class="btn btn-danger btn-custom" onclick="showReason('Eres muy inteligente')">Razón 4</button>
+        <button class="btn btn-info btn-custom" onclick="showReason('Siempre me apoyas')">Razón 5</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function showReason(reason) {
+            document.getElementById('message').innerText = reason;
+        }
+    </script>
+</body>
+</html>
